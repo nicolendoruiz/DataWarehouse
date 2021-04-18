@@ -1,6 +1,6 @@
 import peticion from './Servicios.js';
 
-/*ELEMENTOS*/
+/*ELEMENTOS*/ 
 const inNombre = document.getElementById('inNombre');
 const inCorreo = document.getElementById('inCorreo');
 const inDireccion = document.getElementById('inDireccion');
