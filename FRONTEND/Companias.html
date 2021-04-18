@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="STYLES/styles.css">
+  <title>Compañías</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a href="#" class="navbar-brand">
+      <img src="RESOURCES/LogoContact.png" height="28" alt="CoolBrand">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="Contactos.html">Contactos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Usuarios.html">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Compañías</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Regiones.html">Región/Ciudad</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="alert alert-warning invisible" id="alerta" role="alert">
+    </div>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Consulta</a>
+        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Registro</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <h3>Compañías registradas</h3>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <table id="tblCompanias" class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">País</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <h3>Formulario de registro</h3>
+          </div>
+          <form>
+            <div class="form-row ">
+              <span id="spCompania" class="hidden"></span>
+              <div class="form-group col-md-6">
+                <label for="inNombre">Nombre</label>
+                <input type="text" class="form-control border" id="inNombre" placeholder="Nombre" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inCorreo">Correo</label>
+                <input type="email" class="form-control border" id="inCorreo" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm">
+                <label for="inDireccion">Dirección</label>
+                <input type="text" class="form-control border" id="inDireccion" required>
+              </div>
+              <div class="form-group col-sm">
+                <label for="inTelefono">Teléfono</label>
+                <input type="text" class="form-control" id="inTelefono" required>
+              </div>
+              <div class="form-group col-sm">
+                <label for="inCiudad">Ciudad</label>
+                <select id="inCiudad" class="form-control">
+                </select>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <button type="submit" class="btn btn-success invisible" id="btnEditarCompania">Editar</button>
+              <button type="submit" class="btn btn-success" id="btnRegistrarCompania">Registrar</button>
+              <button type="submit" class="btn btn-danger" id="btnCancelarRegistro">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="module" src="JAVASCRIPTS/Companias.js"></script>
+</body>
+
+</html>

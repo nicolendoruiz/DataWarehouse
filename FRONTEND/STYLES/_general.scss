@@ -1,0 +1,38 @@
+@import "variables";
+
+header {
+    height: 64px;
+    background-color: $azulprincipal;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-open;
+    font-size: 14px;
+    .logo {
+        height: 17.6px;
+        margin: 0 30px;
+        border: 2px solid red;
+    }
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                margin: 0 15px;
+            }
+            li:last-child {
+                margin: 0 30px 0 15px;
+            }
+        }
+    }
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    &__busqueda {
+        width: 30%;
+        display: flex;
+    }
+}

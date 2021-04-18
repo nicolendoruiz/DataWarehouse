@@ -1,0 +1,41 @@
+@import "variables";
+.headerContacto  {
+    display: flex;
+    flex-direction: column;
+    display: -webkit-box;
+    align-items: center;
+    background-color: $azulregistro;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, $azulregistro), color-stop(40%, white));
+    background: linear-gradient(180deg , #1d72c2 60%, white 40%);
+}
+.dvModalEncabezado {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dvModalPrincipal {
+    margin-top: 2%;
+    padding: 1em;
+    width: 100%;
+    background-color: white;
+    border: 2px solid $azulregistro;
+    border-radius: 6.5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spRequerido {
+    color: red;
+}
+
+.sctBusqueda {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
